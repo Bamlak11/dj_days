@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #f9ff40, #ce0000);
+    background-repeat: no-repeat;
+  }
+  
+
+.now-playing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 12px;
+}
+
+.music-info{
+    margin: 20px;
+    padding: 20px;
+}
+
+.music-controls {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.music-controls button {
+
+    color: black;
+    background-image: linear-gradient(to bottom right, #6a6a6a, hsl(0, 0%, 100%));
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.music-controls button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.album-list {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-album {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
