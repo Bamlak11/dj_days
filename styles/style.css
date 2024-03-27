@@ -16,15 +16,25 @@ header {
     border-radius: 20px;
 }
 
-nav a {
+nav ul li {
     display: inline;
     margin: 0 4px;
-    padding: 3px;
-    text-decoration: none;
+    padding: 5px;
     color:white;
     background-color: black;
     border-radius: 8px;
     border: solid 1px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color:#a9a9a9;
 }
 
 body {
@@ -115,11 +125,59 @@ p {
 }
 
 
-.album-list {
+.album-list ul {
     margin: 40px;
-    padding: 20px;
+    padding: 40px;
     display: flex;
+    justify-content: space-between;
+    
+}
+
+.album1{
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, #2d6df6, #000000);
+    color: white;
+}
+
+.album1 img, .album2 img, .album3 img{
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.album1 img:hover, .album2 img:hover, .album3 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.album2{
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, #2d6df6, #000000);
+    color: white;
+}
+
+.album3{
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, #2d6df6, #000000);
+    color: white;
 }
 
 .new-album {
@@ -140,6 +198,33 @@ p {
     justify-content: center;
     margin: 8px;
     padding: 8px;
+}
+
+.add-album-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.add-album-form input[type="text"],
+.add-album-form input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.add-album-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, #3474ff, #001aff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {

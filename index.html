@@ -17,16 +17,17 @@
         <header>
             <h1>DJ DAYS</h1>
             <nav>
-                <a href="#now-playing">Now Playing</a>
-                <a href="#album-list">Album List</a>
-                <a href="#new-album">New Album</a>
+                <ul>
+                    <li><a  href="#now-playing">Now Playing</a></li>
+                    <li><a  href="#album-list">Album List</a></li>
+                    <li><a href="#new-album">New Album</a></li>
+                </ul>
             </nav>
-
 
         </header>
 
-        <h2>Now Playing</h2>
-        <div class="now-playing" id="now-playing">
+        <h2 id="now-playing">Now Playing</h2>
+        <div class="now-playing" id="add-playing">
             
 
             <div class="music-info">
@@ -53,17 +54,35 @@
         </div>
 
 
-        <h2>Album List</h2>
-        <div class="album-list" id="album-list">
+        <h2 id="album-list">Album List</h2>
+        <div class="album-list" id="add-list">
             
             <ul id="albums">
                 
-                <li>
-                    <img src="" alt="Album">
+                <li class="album1">
+                    <img src="https://images.pexels.com/photos/1319799/pexels-photo-1319799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="150" alt="Album">
                     <div>
-                        <h3>Album Title</h3>
-                        <p>Artist</p>
-                        <p>Genre</p>
+                        <h3>Venus</h3>
+                        <p>John Smith</p>
+                        <p>R&B</p>
+                    </div>
+                </li>
+
+                <li class="album2">
+                    <img src="https://images.pexels.com/photos/11026512/pexels-photo-11026512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="150" alt="Album">
+                    <div>
+                        <h3>Mars</h3>
+                        <p>Jane Doe</p>
+                        <p>Classical</p>
+                    </div>
+                </li>
+
+                <li class="album3">
+                    <img src="https://images.pexels.com/photos/7663541/pexels-photo-7663541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="150" alt="Album">
+                    <div>
+                        <h3>Neptune</h3>
+                        <p>Bob</p>
+                        <p>Jazz</p>
                     </div>
                 </li>
                 
@@ -73,8 +92,8 @@
 
 
 
-        <h2>New Album</h2>
-        <div class="new-album" id="new-album">
+        <h2 id="new-album">New Album</h2>
+        <div class="new-album" id="add-album">
             
             <form id="add-album-form" class="add-album-form">
                 <h3>Add Album</h3>
