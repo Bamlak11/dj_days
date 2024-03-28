@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
    
     // Function for when album is clicked
-    document.querySelectorAll(".album-list li").forEach(function(albumItem) {
+    document.querySelectorAll(".album-list li").forEach(function(albumItem) { 
         albumItem.addEventListener("click", function() {
             // gets details of title, artist etc after album is clicked
             const albumTitle = albumItem.querySelector("h3").innerHTML;
@@ -50,5 +50,28 @@ const albumList = document.getElementById("albums");
         // Reset th form
         addAlbumForm.reset();
     });
+
+
+   
+    // lib stock check
+
+
+    // get total of albums
+    const albumStock = document.getElementById("albums"); //gets the albums id from the ul
+    const albums = albumStock.getElementsByTagName("li"); //gets the list of albums
+    const totalAlbums = albums.length; // checks the length of list
+
+    if(totalAlbums < 10) {
+
+        albumStockMessage("You need more albums to play a full set.");
+    } else{
+        albumStockMessage("You're ready to start playing your DJ set.");
+    }
+    // displays message in the "album-stock" div
+    function albumStockMessage(message) {
+        const stockStatus = document.getElementById("album-stock");
+        stockStatus.textContent = message;
+    }
+
 
 });

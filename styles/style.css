@@ -81,7 +81,7 @@ p {
     max-width: 450px; 
     margin: 20px auto; 
     color: white;
-    box-shadow: 800%;
+    /* box-shadow: 80%; */
 }
 
 .music-info{
@@ -144,6 +144,7 @@ p {
     padding: 10px;
     background-image: linear-gradient(to bottom right, #2d6df6, #000000);
     color: white;
+    border-radius: 12px;
 }
 
 .album1 img, .album2 img, .album3 img, .album4 img{
@@ -166,6 +167,8 @@ p {
     height: 300px;
     margin: 20px auto; 
     background-image: linear-gradient(to bottom right, #2d6df6, #000000);
+    border-radius: 12px;
+    color: white;
 }
 
 .add-album-form {
@@ -203,6 +206,14 @@ p {
     cursor: pointer;
 }
 
+.album-stock {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+    font-weight: bold;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -213,7 +224,7 @@ footer {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-top: solid 1px;
-    /* padding: 0px; */
+    padding: 2px;
 }
 
 footer p {
