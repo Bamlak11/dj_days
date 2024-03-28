@@ -130,10 +130,11 @@ p {
     padding: 40px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
-.album1{
+.album1, .album2, .album3, .album4{
     border: solid 1px;
     display: flex;
     flex-direction: column;
@@ -145,39 +146,14 @@ p {
     color: white;
 }
 
-.album1 img, .album2 img, .album3 img{
+.album1 img, .album2 img, .album3 img, .album4 img{
     border-radius: 20px;
     margin: 20px;
 }
 
-.album1 img:hover, .album2 img:hover, .album3 img:hover{
+.album1 img:hover, .album2 img:hover, .album3 img:hover, .album4 img:hover{
     cursor: pointer;
     transform: scale(1.1);
-}
-
-
-.album2{
-    border: solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    background-image: linear-gradient(to bottom right, #2d6df6, #000000);
-    color: white;
-}
-
-.album3{
-    border: solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    background-image: linear-gradient(to bottom right, #2d6df6, #000000);
-    color: white;
 }
 
 .new-album {
