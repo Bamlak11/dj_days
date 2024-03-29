@@ -33,9 +33,9 @@ const albumList = document.getElementById("albums");
         // Create new album HTML
         const newAlbumHTML = `
          <ul>   
-            <li style="">
+            <li>
                 <img src="${albumUrl}" alt="${title} ${artist}">
-                <div>
+                <div style="color:white";>
                     <h3>${title}</h3>
                     <p>${artist}</p>
                     <p>${genre}</p>
