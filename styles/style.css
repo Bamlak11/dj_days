@@ -16,12 +16,17 @@ header {
     border-radius: 20px;
 }
 
+h1:hover, h2:hover {
+    cursor: default;
+}
+
+
 nav ul li {
     display: inline;
     margin: 0 4px;
     padding: 5px;
     color:white;
-    background-color: black;
+    background-image: linear-gradient(to bottom right, #656565, #000000);
     border-radius: 8px;
     border: solid 1px;
 }
@@ -46,7 +51,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 10px auto;
+    margin-top: 20px;
     padding: 40px;
     /* width: fit-content; */
     color: white;
@@ -54,6 +59,7 @@ body {
     border: solid 1px;
     border-radius: 10px;
     height:0px;
+    background-image: linear-gradient(to bottom right, #000000, #383838);
   }
   
   form h3 {
@@ -64,7 +70,12 @@ body {
 }
 
 p {
-    /* color: white; */
+    padding: 2px;
+}
+
+p:hover, h3:hover{
+    cursor: pointer;
+    color: red;
 }
 
 
@@ -72,20 +83,20 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: ;
     padding: 10px;
     border: solid 1px;
     border-radius: 12px;
     background-image: linear-gradient(to bottom right, #2d6df6, #000000);
     width: fit-content;
-    max-width: 450px; 
+    max-width: auto; 
     margin: 20px auto; 
     color: white;
     /* box-shadow: 80%; */
 }
 
 .music-info{
-    margin: 20px;
+    margin: 25px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -107,7 +118,18 @@ p {
     margin: 10px;
     padding: 20px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
    
+}
+
+.music-controls2 {
+    padding: 20px;
+    margin-top: 20px;
+
+    
 }
 
 .music-controls button {
@@ -116,6 +138,7 @@ p {
     background-image: linear-gradient(to bottom right, #6a6a6a, hsl(0, 0%, 100%));
     border-radius: 8px;
     padding: 4px;
+    margin: 2px;
 }
 
 .music-controls button:hover {
@@ -139,9 +162,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: cente;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     background-image: linear-gradient(to bottom right, #2d6df6, #000000);
     color: white;
     border-radius: 12px;
@@ -165,7 +188,7 @@ p {
     width: fit-content;
     max-width: 500px; 
     height: 300px;
-    margin: 20px auto; 
+    margin: 45px auto; 
     background-image: linear-gradient(to bottom right, #2d6df6, #000000);
     border-radius: 12px;
     color: white;
@@ -181,7 +204,7 @@ p {
 
 .add-album-form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: white;
 }
 
@@ -206,6 +229,10 @@ p {
     cursor: pointer;
 }
 
+.add-album-form button:hover {
+    color: rgb(255, 0, 0);
+}
+
 .album-stock {
     display: flex;
     justify-content: center;
@@ -219,7 +246,7 @@ footer {
     bottom: 0;
     width: 100%;
     align-items: center;
-    background-color: black;
+    background-image: linear-gradient(to bottom right, #000000, #383838);
     color:white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
