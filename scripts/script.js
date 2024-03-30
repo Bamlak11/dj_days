@@ -34,8 +34,9 @@ const albumList = document.getElementById("albums");
         const newAlbumHTML = `
          <ul>   
             <li>
+            <div class="album4">
                 <img src="${albumUrl}" alt="${title} ${artist}">
-                <div>
+                
                     <h3>${title}</h3>
                     <p>${artist}</p>
                     <p>${genre}</p>
@@ -75,7 +76,7 @@ const albumList = document.getElementById("albums");
 
 
     //countdown for next event
-const targetDate = new Date(2024, 6, 1, 0, 0, 0); // July 1st, 2024
+const targetDate = new Date(2024, 3, 4, 4); //april 3rd
 
 // Function to update the countdown timer
 function countdown() {

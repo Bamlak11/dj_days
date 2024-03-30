@@ -7,13 +7,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px auto;
-    padding-bottom: 4px;
-    /* border: solid 1px; */
+    margin: 0px auto;
+    padding: 6px;
+    border: solid 1px;
     /* width: fit-content; */
-    color: black;
-    /* background-color: black; */
-    border-radius: 20px;
+    color: white;
+    background-image: linear-gradient(to bottom right, #2b2b2b, #000000);
+    border-radius: 12px;
 }
 
 h1:hover, h2:hover {
@@ -24,10 +24,11 @@ h1{
     display: flex;
     justify-content: center;
     color: white;
+    font-weight:500;
 }
 
 header h1{
-    background-image: linear-gradient(to bottom right, #656565, #000000);
+    /* background-image: linear-gradient(to bottom right, #656565, #000000); */
     border-radius: 8px;
     /* border: solid 1px; */
 }
@@ -40,7 +41,7 @@ nav ul li {
     background-image: linear-gradient(to bottom right, #656565, #000000);
     
     border-radius: 8px;
-    border: solid 1px;
+    border: solid .5px;
 }
 
 nav ul li a {
@@ -72,7 +73,7 @@ body {
     border: solid 1px;
     border-radius: 10px;
     height:0px;
-    background-image: linear-gradient(to bottom right, #000000, #383838);
+    background-image: linear-gradient(to bottom right, #000000, #2b2b2b);
   }
   
   form h3 {
@@ -112,9 +113,9 @@ p:hover, h3:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    color: white;
     font-size: larger;
-    border: solid 1px;
+    border: solid .5px;
     padding: 8px;
     background-color: black;
 }
@@ -203,18 +204,20 @@ p:hover, h3:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: cente;
     margin: 10px;
     padding: 15px;
      background-image: linear-gradient(to bottom right, #000000, #383838);
     /* background-image: linear-gradient(to bottom right, #2d6df6, #000000); */
     color: white;
     border-radius: 12px;
+    width: fit-content;
 }
 
 .album1 img, .album2 img, .album3 img, .album4 img{
     border-radius: 20px;
     margin: 20px;
+    width: 170px;
+    height: auto;
 }
 
 .album1 img:hover, .album2 img:hover, .album3 img:hover, .album4 img:hover{
