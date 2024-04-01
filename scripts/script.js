@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // footer music player
             document.getElementById("song-title2").innerHTML = albumTitle;
             document.getElementById("song-artist2").innerHTML = albumArtist;
-            document.getElementById("song-genre2").innerHTML = albumGenre;
+            // document.getElementById("song-genre2").innerHTML = albumGenre;
             document.getElementById("now-playing-image2").src = albumCover;
         });
     });
@@ -32,6 +32,7 @@ const albumList = document.getElementById("albums");
 
         //will make site not refresh after form submit
         event.preventDefault();
+        
         // retrieve value entered in the form
         const title = document.getElementById("title").value;
         const artist = document.getElementById("artist").value;
@@ -90,31 +91,31 @@ const albumList = document.getElementById("albums");
     
 
     //countdown for next event
-const targetDate = new Date(2024, 3, 4, 4); //april 3rd
+// const targetDate = new Date(2024, 3, 4, 4); //april 3rd
 
 // Function to update the countdown timer
-function countdown() {
-    const now = new Date(); // Get the current date
-    const timeDifference = targetDate - now; // Calculate the time difference in milliseconds
+// function countdown() {
+    // const now = new Date(); // Get the current date
+    // const timeDifference = targetDate - now; // Calculate the time difference in milliseconds
 
     // Check if the target date and time has passed
-    if (timeDifference <= 0) {
+    // if (timeDifference <= 0) {
         // Display a message indicating that the event has started
-        document.getElementById("countdown").textContent = "The event has started!";
-    } else {
+    //     document.getElementById("countdown").textContent = "The event has started!";
+    // } else {
         // Convert the time difference to days, hours, minutes, and seconds
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        // const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        // const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        // const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        // const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
         // Display the countdown timer on the webpage
-        document.getElementById("countdown").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-}
+        // document.getElementById("countdown").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    // }
+// }
 
 // Update the countdown timer every second
-setInterval(countdown, 1000);
+// setInterval(countdown, 1000);
 
 
 
