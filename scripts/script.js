@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("song-artist").innerHTML = albumArtist;
             document.getElementById("song-genre").innerHTML = albumGenre;
             document.getElementById("now-playing-image").src = albumCover;
+            
+            // footer music player
+            document.getElementById("song-title2").innerHTML = albumTitle;
+            document.getElementById("song-artist2").innerHTML = albumArtist;
+            document.getElementById("song-genre2").innerHTML = albumGenre;
+            document.getElementById("now-playing-image2").src = albumCover;
         });
     });
 
@@ -22,8 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
 const addAlbumForm = document.getElementById("add-album-form");
 const albumList = document.getElementById("albums");
 
-    addAlbumForm.addEventListener("submit", function() {
+    addAlbumForm.addEventListener("submit", function(event) {
 
+        //will make site not refresh after form submit
+        event.preventDefault();
         // retrieve value entered in the form
         const title = document.getElementById("title").value;
         const artist = document.getElementById("artist").value;
@@ -74,6 +82,12 @@ const albumList = document.getElementById("albums");
         stockStatus.textContent = message;
     }
 
+
+
+
+
+
+    
 
     //countdown for next event
 const targetDate = new Date(2024, 3, 4, 4); //april 3rd
