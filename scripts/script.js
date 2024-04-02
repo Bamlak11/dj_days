@@ -43,7 +43,7 @@ const albumList = document.getElementById("albums");
         const newAlbumHTML = `
          <ul>   
             <li>
-            <div class="album4">
+            <div class="album">
                 <img src="${albumUrl}" alt="${title} ${artist}">
                 
                     <h3>${title}</h3>

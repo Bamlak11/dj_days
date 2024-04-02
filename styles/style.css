@@ -5,7 +5,7 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0px auto;
     padding: 10px;
@@ -210,9 +210,10 @@ p:hover, h3:hover{
     
 }
 
-.album1, .album2, .album3, .album4{
+.album{
     border: solid 1px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
@@ -224,14 +225,14 @@ p:hover, h3:hover{
     width: fit-content;
 }
 
-.album1 img, .album2 img, .album3 img, .album4 img{
+.album img{
     border-radius: 20px;
     margin: 20px;
     width: 170px;
     height: auto;
 }
 
-.album1 img:hover, .album2 img:hover, .album3 img:hover, .album4 img:hover{
+.album img:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
