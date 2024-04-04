@@ -1,18 +1,21 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin: 0px auto;
+    margin: 0;
     padding: 10px;
     border: solid 1px;
-    /* width: fit-content; */
-    color: white;
-    background-image: linear-gradient(to bottom right, #830909, #000000);
+    width: 100%;
+    color: #fff;
+    background-color: #000; 
+    background-image: linear-gradient(to bottom right, #000000, #333333);
     border-radius: 12px;
 }
 
@@ -20,143 +23,126 @@ h1:hover, h2:hover {
     cursor: default;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
-    color: white;
-    font-weight:500;
+    color: #fff; 
+    font-weight: 500;
 }
 
-header h1{
-    /* background-image: linear-gradient(to bottom right, #656565, #000000); */
-    border-radius: 8px;
-    /* border: solid 1px; */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    /* background-color: #111;  */
+    background-image: linear-gradient(to bottom right, #000000, #333333);
+    padding-top: 20px; 
 }
 
 nav ul li {
     display: inline-flex;
-    margin: 0 4px;
-    padding: 6px;
-    color:white;
-    background-image: linear-gradient(to bottom right, #656565, #000000);
-    
-    border-radius: 8px;
-    border: solid .5px;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff; 
     text-decoration: none;
+    display: block;
+    padding: 10px 20px;
 }
 
 nav ul li a:hover {
     cursor: pointer;
     transform: scale(1.1);
-    color:red;
+    color: #deb887;
+}
+
+main {
+    margin-left: 180px;
+    padding: 0px;
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #c6c6c6, #000000);
-    /* background-image: linear-gradient(to bottom right, #adf7ff, #0048ff); */
+    background-color: #deb887; 
     background-repeat: no-repeat;
-  }
+    margin: 0;
+}
 
-  h2 {
+h2 {
     align-items: center;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
     padding: 35px;
-    /* width: fit-content; */
-    color: white;
-    background-color: black;
+    color: #fff; 
+    /* background-color: #000;  */
+    background-image: linear-gradient(to bottom right, #000000, #333333);
     border: solid 1px;
     border-radius: 10px;
-    height:0px;
-    background-image: linear-gradient(to bottom right, #830909, #000000);
-  }
-  
-  form h3 {
+    height: 0px;
+    
+}
+
+form h3 {
     display: flex;
     justify-content: center;
     margin: 6px;
-    color: white;
+    color: #fff; 
 }
 
 p {
     padding: 2px;
+    /* color: white; */
 }
 
-p:hover, h3:hover{
+.album p:hover, h3:hover {
     cursor: pointer;
-    color: red;
-}
-
-.hero {
-    padding: 10px;
-}
-
-.center-hero {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 0px;
-}
-
-.center-hero h1{
-    color: rgb(126, 35, 35);
-}
-
-.center-hero img{
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    padding: 8px;
-    box-shadow: 10px;
-}
-
-.countdown{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: larger;
-    border: solid .5px;
-    padding: 8px;
-    background-color: black;
+    color: #deb887;
 }
 
 .now-playing {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding: 10px;
-    border: solid 1px;
-    border-radius: 12px;
-    background-image: linear-gradient(to bottom right, #830909, #000000);
-    /* background-image: linear-gradient(to bottom right, #2d6df6, #000000); */
-    width: fit-content;
-    max-width: auto; 
-    margin: 20px auto; 
-    color: white;
-    /* box-shadow: 80%; */
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px; 
 }
 
-.music-info{
+.now-playing .music-info {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.now-playing img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: spin 15s linear infinite;
+    border: dashed 3px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.music-info {
     margin: 20px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
-.music-info img {
-    border-radius: 20px;
+.music-info p:hover, h3:hover{
+    color: white;
 }
 
 .music-info img:hover {
@@ -164,53 +150,28 @@ p:hover, h3:hover{
     transform: scale(1.1);
 }
 
-.music-controls {
-    margin: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.music-controls2 {
-    padding: 20px;
-    margin-top: 20px;
-
-    
-}
-
-.music-controls button {
-
-    color: black;
-    background-image: linear-gradient(to bottom right, #6a6a6a, hsl(0, 0%, 100%));
-    border-radius: 8px;
-    padding: 4px;
-    margin: 2px;
-}
-
-.music-controls button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    color: red;
-}
 
 .album-list {
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .album-list ul {
-    margin: 40px;
-    padding: 40px;
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
-.album{
+.album-list ul li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.album-list ul li img {
+    border-radius: 10%;
+}
+
+.album {
     border: solid 1px;
     display: flex;
     flex-wrap: wrap;
@@ -218,21 +179,21 @@ p:hover, h3:hover{
     justify-content: center;
     margin: 10px;
     padding: 15px;
-    background-image: linear-gradient(to bottom right, #830909, #000000);
-    /* background-image: linear-gradient(to bottom right, #2d6df6, #000000); */
-    color: white;
+    /* background-color: #000; */
+    background-image: linear-gradient(to bottom right, #000000, #333333);
+    color: #fff; 
     border-radius: 12px;
     width: fit-content;
 }
 
-.album img{
+.album img {
     border-radius: 20px;
     margin: 20px;
     width: 170px;
     height: auto;
 }
 
-.album img:hover{
+.album img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -246,10 +207,10 @@ p:hover, h3:hover{
     max-width: 500px; 
     height: 300px;
     margin: 95px auto; 
-    background-image: linear-gradient(to bottom right, #830909, #000000);
-    /* background-image: linear-gradient(to bottom right, #2d6df6, #000000); */
+    /* background-color: #000;  */
+    background-image: linear-gradient(to bottom right, #000000, #333333);
+    color: #fff; 
     border-radius: 12px;
-    color: white;
 }
 
 .add-album-form {
@@ -260,12 +221,13 @@ p:hover, h3:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 20px;
+    color: #fff; 
 }
 
 .add-album-form label {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: #fff;
 }
 
 .add-album-form input[type="text"],
@@ -273,7 +235,7 @@ p:hover, h3:hover{
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
-    border: 2px solid #000000;
+    border: 2px solid #000;
     border-radius: 5px;
     box-sizing: border-box; 
 }
@@ -282,16 +244,15 @@ p:hover, h3:hover{
     display: block;
     width: 100%;
     padding: 10px;
-    /* background-image: linear-gradient(to bottom right, #3474ff, #001aff); */
-     background-image: linear-gradient(to bottom right, #000000, #636363);
-    color: #fff;
+    background-color: black;
+    color: #deb887;
     border: solid 1px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .add-album-form button:hover {
-    color: rgb(255, 0, 0);
+    color: white;
 }
 
 .album-stock {
@@ -300,16 +261,16 @@ p:hover, h3:hover{
     font-size: larger;
     align-items: center;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to bottom right, #5e0a0a, #000000);
-    background-color: transparent;
-    color: white;
+    /* background-color: #000;  */
+    background-image: linear-gradient(to bottom right, #000000, #333333);
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -333,9 +294,9 @@ footer img {
     transition: transform 0.2s ease;
 }
 
-/* footer img:hover {
+footer img:hover {
     transform: scale(1.1); 
-} */
+}
 
 .footer-controls {
     display: flex;
