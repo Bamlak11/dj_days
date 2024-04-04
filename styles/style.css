@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -36,7 +37,6 @@ nav {
     left: 0;
     width: 200px;
     height: 100vh;
-    /* background-color: #111;  */
     background-image: linear-gradient(to bottom right, #000000, #333333);
     padding-top: 20px; 
 }
@@ -65,8 +65,7 @@ main {
 }
 
 body {
-    background-color: #deb887; 
-    background-repeat: no-repeat;
+    background-color: #e4b87e; 
     margin: 0;
 }
 
@@ -133,20 +132,25 @@ p {
 }
 
 .music-info {
-    margin: 20px;
-    padding: 10px;
+    margin: 15px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: solid 1px;
+    border-radius: 20px;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #000000, #333333);
 }
 
 .music-info p:hover, h3:hover{
-    color: white;
+    color: #deb887;
+    cursor: pointer;
 }
 
 .music-info img:hover {
-    cursor: pointer;
+    cursor:pointer;
     transform: scale(1.1);
 }
 
@@ -179,11 +183,14 @@ p {
     justify-content: center;
     margin: 10px;
     padding: 15px;
-    /* background-color: #000; */
     background-image: linear-gradient(to bottom right, #000000, #333333);
     color: #fff; 
     border-radius: 12px;
     width: fit-content;
+}
+
+.album h3:hover{
+    color: #deb887;
 }
 
 .album img {
@@ -205,7 +212,7 @@ p {
     border: solid 1px;
     width: fit-content;
     max-width: 500px; 
-    height: 300px;
+    height: 500px;
     margin: 95px auto; 
     /* background-color: #000;  */
     background-image: linear-gradient(to bottom right, #000000, #333333);
@@ -221,6 +228,7 @@ p {
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 20px;
+    width: 250px;
     color: #fff; 
 }
 
@@ -268,7 +276,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* background-color: #000;  */
     background-image: linear-gradient(to bottom right, #000000, #333333);
     color: #fff;
     padding: 20px;
@@ -277,6 +284,7 @@ footer {
     align-items: center;
     height: 20px;
     border: solid 1px;
+    box-sizing: content-box;
     border-radius: 8px;
 }
 
@@ -305,4 +313,9 @@ footer img:hover {
 
 footer p, h3 {
     margin: 5px;
+}
+
+footer p:hover, footer h3:hover{
+    color:#deb887;
+    cursor: pointer;
 }
