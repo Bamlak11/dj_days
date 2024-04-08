@@ -12,9 +12,9 @@ header {
     align-items: center;
     margin: 0;
     padding: 10px;
-    border: solid 1px;
+    border: solid 1px white;
     width: 100%;
-    color: #fff;
+    color: white;
     background-color: #000; 
     background-image: linear-gradient(to bottom right, #000000, #333333);
     border-radius: 12px;
@@ -27,7 +27,7 @@ h1:hover, h2:hover {
 h1 {
     display: flex;
     justify-content: center;
-    color: #fff; 
+    color: #e4b87e; 
     font-weight: 500;
 }
 
@@ -39,28 +39,29 @@ nav {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #000000, #333333);
     padding-top: 20px; 
+    border: solid black;
 }
 
 nav ul li {
-    display: inline-flex;
-    margin-bottom: 10px;
+    /* display:flex; */
+    margin-bottom: 20px;
 }
 
 nav ul li a {
-    color: #fff; 
+    color: #e4b87e; 
     text-decoration: none;
     display: block;
     padding: 10px 20px;
+    border: solid;
 }
 
 nav ul li a:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    color: #deb887;
+    color: #fff;
 }
 
 main {
-    margin-left: 180px;
+    margin-left: 185px;
     padding: 0px;
 }
 
@@ -76,10 +77,9 @@ h2 {
     justify-content: center;
     margin-top: 20px;
     padding: 35px;
-    color: #fff; 
-    /* background-color: #000;  */
+    color: #e4b87e; 
     background-image: linear-gradient(to bottom right, #000000, #333333);
-    border: solid 1px;
+    border: solid 1px white;
     border-radius: 10px;
     height: 0px;
     
@@ -238,6 +238,11 @@ p {
     color: #fff;
 }
 
+.add-album-form h3:hover{
+    cursor: default;
+    color: white;
+}
+
 .add-album-form input[type="text"],
 .add-album-form input[type="url"] {
     width: 100%;
@@ -277,13 +282,13 @@ footer {
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to bottom right, #000000, #333333);
-    color: #fff;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20px;
-    border: solid 1px;
+    border: solid 1px white;
     box-sizing: content-box;
     border-radius: 8px;
 }
