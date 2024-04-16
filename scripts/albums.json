@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Venus",
+      "artist": "John Smith",
+      "genre": "R&B",
+      "coverUrl": "https://images.pexels.com/photos/623843/pexels-photo-623843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "Mars",
+      "artist": "Jane Doe",
+      "genre": "Classical",
+      "coverUrl": "https://images.pexels.com/photos/3865993/pexels-photo-3865993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "Neptune",
+      "artist": "Bob",
+      "genre": "Jazz",
+      "coverUrl": "https://images.pexels.com/photos/19335250/pexels-photo-19335250/free-photo-of-view-the-alte-oper-building-and-a-fountain-frankfurt-am-main-germany.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "Moon",
+      "artist": "Neil Armstrong",
+      "genre": "Hip-Hop",
+      "coverUrl": "https://images.pexels.com/photos/5677274/pexels-photo-5677274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "title": "Time",
+      "artist": "Patrick",
+      "genre": "Jazz",
+      "coverUrl": "https://images.pexels.com/photos/11593565/pexels-photo-11593565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    }
+  ]
+  
